@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500&display=swap');
+body{
+    /* background-image: url('https://www.freeworldmaps.net/united-states/ohio/where-is-ohio.jpg'); */
+     background-repeat: no-repeat;
+     background-size:cover;   
+     direction: rtl; 
+     font-family: 'Cairo', sans-serif;
+}
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+.card{
+    border-radius: 0 0 20px;
+    box-shadow: 10px 2px 5px -2px rgb(27 103 175 / 56%);
+}
+.card-title{
+    font-size: 20pt;
+    font-weight: 900;
+    color: #1c326b;
+ 
+}

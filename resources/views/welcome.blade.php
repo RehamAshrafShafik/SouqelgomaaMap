@@ -37,18 +37,25 @@
    
   
       <div class="col-md-9 ">
-        <table class="table">
+
+        <table id="dtVerticalScrollExample" class="table table-striped table-bordered table-sm" cellspacing="0"
+        width="100%">
           <thead>
-            <th>--</th>
+            <tr>
+            <th>#</th>
 
             <th> {{__('content.Gov')}}</th>
+            </tr>
           </thead>
+      
           <tbody>
             @foreach($governoments as $index => $gov)
             <tr>
+            
               <td> {{ $index +1 }} </td>
-              <td> {{ $gov->name }} </td>
-<tr>
+              <td>   <a href="{{route('gov')}}">{{ $gov->name }}   </a></td>
+          
+            </tr>
             @endforeach
           </tbody>
         </table>
@@ -80,14 +87,14 @@
     });
     // The marker, positioned at Uluru
     const marker = new google.maps.Marker({
-      position: uluru,
+      position: cairo,
       map: map,
     });
   }
 </script>
- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASXMoZXfOqjIv19lBd1jmPgVz6Akg7ib0&callback=initMap&libraries=&v=weekly&region=EG&language=ar"
- async></script>
 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASXMoZXfOqjIv19lBd1jmPgVz6Akg7ib0&callback=initMap&libraries=&v=weekly&region=EG&language=ar"
+ async></script>
 
 
 @endsection

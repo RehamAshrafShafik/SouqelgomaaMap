@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'home']);
+Route::get('/governoment', [App\Http\Controllers\GovernomentController::class, 'index'])->name('gov');
 
 Auth::routes();
 

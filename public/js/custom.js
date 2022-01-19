@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('#dtVerticalScrollExample').DataTable({
-    "scrollY": "250px",
+    "scrollY": "500px",
     "scrollCollapse": true,
     "paging" :false,
     "sDom": '<"top"i>rt<"clear">',
@@ -10,3 +10,5 @@ $(document).ready(function () {
     });
     $('.dataTables_length').addClass('bs-select');
     });
+
+   
